@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.MainPage">
+
+    <!-- only no Windows
+    <SwipeView Threshold="200" SwipeStarted="SwipeView_SwipeStarted" SwipeChanging="SwipeView_SwipeChanging" SwipeEnded="SwipeView_SwipeEnded">
+        <SwipeView.LeftItems >
+            <SwipeItems>
+                <SwipeItem Text="123" BackgroundColor="Red" Invoked="SwipeItem_Invoked">
+
+                </SwipeItem>
+            </SwipeItems>
+
+        </SwipeView.LeftItems>
+        <SwipeView.RightItems>
+            <SwipeItem Text="123" BackgroundColor="Red" Invoked="SwipeItem_Invoked">
+
+            </SwipeItem>
+        </SwipeView.RightItems>
+        <SwipeView.TopItems>
+            <SwipeItem Text="123" BackgroundColor="Red" Invoked="SwipeItem_Invoked">
+
+            </SwipeItem>
+        </SwipeView.TopItems>
+        <SwipeView.BottomItems>
+            <SwipeItem Text="123" BackgroundColor="Red" Invoked="SwipeItem_Invoked">
+
+            </SwipeItem>
+        </SwipeView.BottomItems>
+        <Grid HeightRequest="100" WidthRequest="300">
+            <Label Text="SwipeZone" BackgroundColor="Gray"></Label>
+        </Grid>
+    </SwipeView>-->
+    <ScrollView>
+        <VerticalStackLayout>
+        <SearchBar TextChanged="SearchBar_TextChanged" SearchButtonPressed="SearchBar_SearchButtonPressed">
+
+        </SearchBar>
+        <HorizontalStackLayout x:Name="F" HeightRequest="100" BackgroundColor="Gray">
+            <VerticalStackLayout>
+                <Label x:Name="NameF" Text="Иван"></Label>
+                <Label x:Name="FamiliaF" Text="Иванов"></Label>
+                <Label x:Name="OtchestvoF" Text="Иванович"></Label>
+            </VerticalStackLayout>
+            <Image Source="dotnet_bot.png"></Image>
+        </HorizontalStackLayout>
+            <HorizontalStackLayout x:Name="S" HeightRequest="100" BackgroundColor="Gray">
+            <VerticalStackLayout>
+                <Label x:Name="NameS" Text="Алексей"></Label>
+                <Label x:Name="FamiliaS" Text="Алексеев"></Label>
+                <Label x:Name="OtchestvoS" Text="Алексеевич"></Label>
+            </VerticalStackLayout>
+            <Image Source="dotnet_bot.png"></Image>
+        </HorizontalStackLayout>
+            <HorizontalStackLayout x:Name="T" HeightRequest="100" BackgroundColor="Gray">
+            <VerticalStackLayout>
+                <Label x:Name="NameT" Text="Александр"></Label>
+                <Label x:Name="FamiliaT" Text="Иванов"></Label>
+                <Label x:Name="OtchestvoT" Text="Иванович"></Label>
+            </VerticalStackLayout>
+            <Image Source="dotnet_bot.png"></Image>
+        </HorizontalStackLayout>
+            <HorizontalStackLayout x:Name="Fo" HeightRequest="100" BackgroundColor="Gray">
+            <VerticalStackLayout>
+                <Label x:Name="NameFo" Text="Пётр"></Label>
+                <Label x:Name="FamiliaFo" Text="Петров"></Label>
+                <Label x:Name="OtchestvoFo" Text="Петрович"></Label>
+            </VerticalStackLayout>
+            <Image Source="dotnet_bot.png"></Image>
+        </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+    
+</ContentPage>
